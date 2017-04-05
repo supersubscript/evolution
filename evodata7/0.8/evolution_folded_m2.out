@@ -1,0 +1,6 @@
+#mutation_rate	indel_prob	indel_power	crossover_cross_rate	crossover_prob
+#0.001	0.2	-2	0.02	0.8
+#gen	avgfit_mean	avgfit_sd	avgfit_med	avgbits_mean	avgbits_sd	avgbits_med	fit_mean	fit_sd	fit_med	bits_mean	bits_sd	bits_med	cpu_mean	cpu_sd	cpu_med	genes_mean	genes_sd	genes_med
+0	-3107.19	12.0293	-3088.17	5000	0	5000	-727.015	5.53793	-722.189	5000	0	5000	0	0	0	48.1933	0.253246	48
+10000	-305.5	2.67128	-249.784	3461.4	20.8678	3480.93	-255.933	1.4653	-237.133	3476.92	21.5568	3482	5.62229	0.0498777	5.1335	34.4868	0.211191	34
+20000	-103.659	0.78548	-88.1935	3500.05	21.3731	3495.61	-97.1744	0.789984	-81.0681	3500.19	21.3722	3495.5	6.06798	0.0569789	5.296	37.7343	0.209551	38

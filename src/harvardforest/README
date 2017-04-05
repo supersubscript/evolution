@@ -1,0 +1,71 @@
+Radhryy.midpt.README
+ 
+ Radhryy.midpt files:
+
+These files differ from the previous Radhryy files in that the
+decimal day time stamp in column 1 now represents the midpoint
+time of the hourly average, not the beginning or the end.
+
+Each file contains data for one year indicated by yy
+
+   These files contain hourly-averaged radiation data, from the SUNYA boom
+at 27 m on the 30-m EMS tower.
+ 
+   columns:   1   2    3   4  5   6   7   8     9      10     11    12
+             ddy day hour Rn Sup Sdn Lup Ldn soilheat Rnsum PARup PARdn
+
+"ddy" is decimal day of the year, in GMT. The "ddy" stamp represents
+      the midpoint time of the hourly-averaged period, so the data
+      period averaged would be 30 minutes before to 30 minutes after
+      the given time stamp.	
+day-integer day of the year
+hour-integer hour over which most of the average occurred, in GMT.
+     Note that this does not exactly represent the midpoint time
+     for the given averaging period, as the midpoint could be anytime
+     within the hour. The midpoint time of the hourly average is
+     given in column 1 (the "ddy" column).		
+Rnet-Net radiometer 
+Sup-Reflected global solar radiation
+Sdn-Incoming global solar radiation
+Lup-Upwelling longwave radiation
+Ldn-Downwelling longwave radiation
+Rnsum-Sum of Sup,Sdn,Lup,Ldn with appropriate signs applied
+
+Rnet,Sup,Sdn,Lup,Rnsum all follow the sign convention: positive up.
+However, Ldn is positive in these files, in violation of the convention.
+And PARdn is positive.
+
+Rn, Sup,Sdn, Lup,Ldn,soilheat, and Rnsum  all are in W/m2. 
+PAR is in millimoles/m2/s. 
+
+The net radiometer is a Swissteco; it was operated from August, 1991
+through August 1992. The global solar data come from Kipp and Zonen
+pyranometers. Longwave data are from Eppley pyrgeometers. PAR is
+from Licor quantum PAR sensors. Soil heat flux is measured with a soil
+heat flux plate at 5cm depth.
+
+There are times when Lup or Ldn were not functioning properly-these have
+been set to NA in this data set.
+
+Offsets in PAR for 1996 were taken out, but this still
+left some noise. Negative values for PAR set to NA
+
+From 1991 until mid-2001, data used were collected straight from campbell
+dataloggers, which reported data every 20 minutes. The midpoint
+time for averages during this period was consistently 10 minutes
+after the top of the hour. For example, the hour 16 data would have
+its midpoint at 16:10, therefore representing data from 15:40 to 
+16:40.
+
+From late 2001 onward, data that were used were merged into a serial 
+stream and collected on a linux machine where averaging was done into
+30-minute moment "mom" files, which were then made into hourly averages
+for these files.  The time stamps for the 30-minute averages in the
+"mom" were not consistently at the same time during each hour, so the
+midpoint times for the averages reported during this period will
+vary within the given hour.
+************************************************************************
+Revision log:
+DATA revision 5/20/05
+Data files from 1991 to 2001 were replaced to fix some transposed columns,
+New files added for 2002-2004

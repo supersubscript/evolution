@@ -1,0 +1,17 @@
+cost-type: 1
+promoter_start: 106
+promoter_end: 150
+enable_repressors: 0
+maxhamming_dna: 6
+maxhamming_interaction: 6
+maxhamming_startsite: 6
+cost_penalty_links: 0
+cost_penalty_genes: 0
+gene_indel_prob: 0.2
+indel_length_power: -1
+gene_mutation_prob: 0.001
+gene_crossover_prob: 0.05
+gene_crossover_length_prob: 0.001
+alignment_optimization_maxdiff: 3
+genome_length_max: 60000
+genome_length_init: 2

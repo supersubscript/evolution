@@ -1,0 +1,24 @@
+alignment.o: alignment.cc alignment.h bitstring.h common.h
+test_oscillations.o: test_oscillations.cc
+test_rnap.o: test_rnap.cc genes.h common.h bitstring.h genes.cc
+binom.o: binom.cc binom.h
+crossover2.o: crossover2.cc common.h bitstring.h alignment.h
+test_rnap_speed.o: test_rnap_speed.cc genes.h common.h bitstring.h \
+ genes.cc
+test_locker.o: test_locker.cc recordlocker.cc recordlocker.h
+common.o: common.cc common.h
+organism.o: organism.cc organism.h genes.h common.h bitstring.h \
+ simulator.h lightlevelgetter.h alignment.h
+crossover.o: crossover.cc common.h bitstring.h alignment.h
+boolean.o: boolean.cc common.h boolean.h
+genes.o: genes.cc genes.h common.h bitstring.h
+simulator.o: simulator.cc simulator.h
+digorg.o: digorg.cc common.h population.h organism.h genes.h bitstring.h \
+ simulator.h lightlevelgetter.h recordlocker.h
+test_records.o: test_records.cc recordlocker.h recordlocker.cc
+recordlocker.o: recordlocker.cc recordlocker.h
+stat.o: stat.cc genes.h common.h bitstring.h organism.h simulator.h \
+ lightlevelgetter.h population.h boolean.h binom.h
+test_bitstring.o: test_bitstring.cc bitstring.h common.h
+test_alignment.o: test_alignment.cc alignment.cc alignment.h bitstring.h \
+ common.h

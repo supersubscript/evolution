@@ -1,0 +1,7 @@
+#generation	cputime	cost	genes	genome	TFlinks	deglinks	complexlinks	TF-	TF0	TF+	deg-	deg0	deg+	comp-	comp0	comp+
+0	0	1	0	2	0	0	0	0	0	0	0	0	0	0	0	0
+10	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+#generation	cputime	cost	genes	genome	TFlinks	deglinks	complexlinks	TF-	TF0	TF+	deg-	deg0	deg+	comp-	comp0	comp+
+0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+10	0	1	0	2	0	0	0	0	0	0	0	0	0	0	0	0
+20	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
